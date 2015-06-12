@@ -14,22 +14,29 @@
   <script src="libs/localstorage-adapter-0.5.1.js"></script>
 
 
-    <script src="blogger.js"></script>
+    <script src="forum.js"></script>
     <script src="router.js"></script>
     <script src="store.js"></script>
 
 
-    <script src="controllers/about.js"> </script>
-    <script src="controllers/contact.js"></script>
-    <script src="controllers/post.js"></script>
-    <script src="controllers/posts.js"></script>
-    <script src="controllers/new-post.js"></script>
-    <script src="controllers/new-comment.js"></script>
+    <script src="controllers/new-question.js"> </script>
+    <script src="controllers/new-answer.js"> </script>
+    <script src="controllers/question.js"> </script>
+
+
+    <script src="models/question.js"></script>
+    <script src="models/answer.js"></script>
+
+
+    <script src="routes/questions.js"></script>
+    <script src="routes/question.js"></script>
+    <script src="routes/recent-answers.js"></script>
+
 
 
     </script>
     <script>
-      EmberHandlebarsLoader.loadTemplates([]);
+      EmberHandlebarsLoader.loadTemplates(['new-question', 'question', 'questions', 'application', 'recent-answers', 'new-answer']);
 
     </script>
   </head>

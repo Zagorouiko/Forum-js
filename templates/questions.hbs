@@ -1,0 +1,8 @@
+<h1>Forum</h1>
+  <ul>
+    {{#each}}
+      <li>{{#link-to 'question' id}}{{question}}{{/link-to}}</li>
+    {{/each}}
+  </ul>
+
+  <p>{{#link-to 'new-question' classNames='btn btn-primary'}}Add a Question{{/link-to}}</p>
