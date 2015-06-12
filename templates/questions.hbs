@@ -1,8 +1,8 @@
-<h1>Forum</h1>
+<h1>Basilica Aemilia</h1>
+
+<h2>Questions</h2>
   <ul>
     {{#each}}
-      <li>{{#link-to 'question' id}}{{question}}{{/link-to}}</li>
+      <li>{{name}}: {{#link-to 'question' this.id}}{{question}}{{/link-to}}</li>
     {{/each}}
   </ul>
-
-  <p>{{#link-to 'new-question' classNames='btn btn-primary'}}Add a Question{{/link-to}}</p>

@@ -2,7 +2,7 @@
   <head>
     <title>Forum</title>
 
-    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css">
 
 
@@ -22,6 +22,8 @@
     <script src="controllers/new-question.js"> </script>
     <script src="controllers/new-answer.js"> </script>
     <script src="controllers/question.js"> </script>
+    <script src="controllers/answer.js"> </script>
+
 
 
     <script src="models/question.js"></script>
@@ -31,12 +33,14 @@
     <script src="routes/questions.js"></script>
     <script src="routes/question.js"></script>
     <script src="routes/recent-answers.js"></script>
+    <script src="routes/answer.js"></script>
+
 
 
 
     </script>
     <script>
-      EmberHandlebarsLoader.loadTemplates(['new-question', 'question', 'questions', 'application', 'recent-answers', 'new-answer']);
+      EmberHandlebarsLoader.loadTemplates(['new-question', 'question', 'questions', 'application', 'recent-answers', 'new-answer', 'answer']);
 
     </script>
   </head>
